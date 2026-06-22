@@ -8,14 +8,7 @@ const productRoutes = require("./routes/products");
 
 const app = express();
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      "https://stellar-scone-a102ff.netlify.app"
-    ],
-  })
-);
+app.use(cors());
 app.use(express.json());
 
 app.use(
